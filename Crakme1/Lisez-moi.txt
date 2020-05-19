@@ -17,19 +17,19 @@ Prennez le temps d'apprendre les bases grâce à la chaîne Youtube Monologix : 
 
 CODE SOURCE (Légitimité du Crackme) :
 
-	long password;
-	long valeur;
+long password;
+long valeur;
 
-	password = ******;
-  
-	printf("Entrez le mot de passe s'il vous plait : ");
-	scanf_s("%ld", &valeur);
-	printf("\n\n");
-	if (valeur == password)
-	{
-		printf("Bravo, tu as reussi ! Tu es digne de faire partie de la communaute Monologix !\n\n");
-	}
-	else
-	{
-		printf("Mot de passe incorrect ! Reessaye, ne te decourage pas !\n\n");
-	}
+password = ******;
+
+printf("Entrez le mot de passe s'il vous plait : ");
+scanf_s("%ld", &valeur);
+printf("\n\n");
+if (valeur == password)
+{
+	printf("Bravo, tu as reussi ! Tu es digne de faire partie de la communaute Monologix !\n\n");
+}
+else
+{
+	printf("Mot de passe incorrect ! Reessaye, ne te decourage pas !\n\n");
+}
