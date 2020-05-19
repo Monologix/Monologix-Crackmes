@@ -14,3 +14,22 @@ Pour réussir ce challenge, vous devez :
 
 Bonne chance ! Rendez-vous sur discord si vous avez besoin d'aide : https://discord.com/invite/XEf2zUz
 Prennez le temps d'apprendre les bases grâce à la chaîne Youtube Monologix : https://www.youtube.com/c/Monologix
+
+--------------------------------------
+
+CODE SOURCE (Légitimité du Crackme) :
+
+char saisie[50] = "";
+printf("Entrez le mot de passe...: ");
+scanf("%s",&saisie);
+
+if (strcmp(saisie,"******")==0)
+{
+printf("Bravo, tu as reussi ! Tu es digne de faire partie de la communaute Monologix !\n\n");
+
+}
+else
+{
+printf("Mot de passe incorrect ! Reessaye, ne te decourage pas !\n\n");
+
+}
