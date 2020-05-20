@@ -1,0 +1,40 @@
+**Crakme n°3**
+
+Voici le troisième Crackme pour vous entraîner !
+Insallez X64DBG ici pour commencer : https://x64dbg.com/
+
+Pour réussir ce challenge, vous devez :
+
+- Trouver un nom d'utilisateur et un mot de passe valide
+
+**OU**
+
+- Créer un générateur de mot de passe (KeyGen) en fonction du nom d'utilisateur
+
+Bonne chance ! Rendez-vous sur discord si vous avez besoin d'aide : https://discord.com/invite/XEf2zUz
+Prennez le temps d'apprendre les bases grâce à la chaîne Youtube Monologix : https://www.youtube.com/c/Monologix
+
+--------------------------------------
+
+CODE SOURCE (Légitimité du Crackme) :
+
+char b[50], c[50], d[50], e[100];
+
+	int j = snprintf(a, 6, "%s\n", b);
+	j--;
+	snprintf(e, 100, "%d\n", j);
+	int len = strlen(e);
+	e[len - 1] = '\0';
+
+	strcpy(c, a); 
+	strcat(c, a);
+	strcat(c, e); //
+
+	if (strcmp(passwordentre, doubleuser) == 0)
+	{
+		printf("Bravo, tu as reussi ! Tu es digne de faire partie de la communaute Monologix !\n\n");
+	}
+	else
+	{
+		printf("Mot de passe incorrect ! Reessaye, ne te decourage pas !\n\n");
+	}
