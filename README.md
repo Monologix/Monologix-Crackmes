@@ -4,7 +4,7 @@
 **Crakme n°1**
 
 Le Crackme n°1 est disponible pour vous entraîner !
-Insallez X64DBG ici pour commencer : https://x64dbg.com/
+Installez X64DBG ici pour commencer : https://x64dbg.com/
 
 Pour réussir ce challenge, vous devez :
 - Trouver le mot de passe
