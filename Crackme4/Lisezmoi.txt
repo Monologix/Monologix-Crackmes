@@ -1,1 +1,64 @@
-Test
+**Crakme n°4**
+
+Voici le quatrième Crackme pour vous entraîner !
+Insallez X64DBG ici pour commencer : https://x64dbg.com/
+
+Pour réussir ce challenge, vous devez :
+
+- Trouver un nom d'utilisateur et un mot de passe valide
+
+Bonne chance ! Rendez-vous sur discord si vous avez besoin d'aide : https://discord.com/invite/XEf2zUz
+Prennez le temps d'apprendre les bases grâce à la chaîne Youtube Monologix : https://www.youtube.com/c/Monologix
+
+--------------------------------------
+
+CODE SOURCE (Légitimité du Crackme) :
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main()
+{
+    char *s, *password, *pass;
+    pass = malloc(100 * sizeof(int));
+    s = malloc(100 * sizeof(int));
+    password = malloc(100 * sizeof(int));
+    while (1)
+    {
+        printf("Entrez le nom d'utilisateur : ");
+        scanf("%s", s);
+        strcpy(pass, s);
+        strcat(pass, s);
+        strcat(pass, "***");
+        printf("Entrez le mot de passe : ");
+        scanf("%s", password);
+        
+        if (strcmp(pass, password) != 0)
+        {
+            puts("Mot de passe incorrect ! Reessaye ne te decourage pas !");
+        }
+        else
+        {
+            puts("Bravo !");
+            break;
+        }
+            
+    }
+    if (strcmp(pass, password) != 0)
+    {
+        puts("Tu triches !");
+        main();
+    }
+    else
+    {
+        printf("La fenetre va se fermer dans 5 secondes...\n");
+        sleep(5);
+    }
+        
+    free(s);
+    free(pass);
+    free(password);
+    return 0;
+}
